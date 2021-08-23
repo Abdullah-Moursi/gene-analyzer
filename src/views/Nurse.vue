@@ -4,7 +4,7 @@
       <HomeNavigation />
       <div>
         <h1>Add a Patient</h1>
-        <div class="home row col-12 justify-content-center px-0 m-0">
+        <!-- <div class="home row col-12 justify-content-center px-0 m-0"> -->
           <form class="row gy-2 gx-3 align-items-center">
             <div class="col-auto">
               <label class="visually-hidden" for="autoSizingInput">Name</label>
@@ -43,7 +43,7 @@
               </button>
             </div>
           </form>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -73,6 +73,9 @@ export default {
       };
       e.preventDefault()
       console.log(newPatient);
+      this.name = '';
+      this.ID = '';
+      this.DNA = '';
     },
   },
 };
@@ -91,10 +94,14 @@ export default {
   background-size: 100% 100%;
   position: absolute;
 }
-.BROWS {
+
+.col-auto {
+  margin: 20px auto;
+}
+/* .BROWS {
   background-color: rgb(16, 17, 17);
   width: 100px;
   height: 100px;
   margin-top: 400px;
-}
+} */
 </style>
