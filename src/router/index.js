@@ -4,6 +4,9 @@ import store from "../store";
 import Home from "../views/Home.vue";
 import Nurse from "../views/Nurse.vue";
 import Login from "../views/Login.vue";
+import DataManager from "../views/DataManager.vue";
+import AddStaff from "../views/AddStaff.vue";
+
 
 Vue.use(VueRouter);
 
@@ -22,6 +25,16 @@ const routes = [
     path: "/Login",
     name: "Login",
     component: Login,
+  },
+  {
+    path: "/DataManager",
+    name: "DataManager",
+    component: DataManager,
+  },
+  {
+    path: "/AddStaff",
+    name: "AddStaff",
+    component: AddStaff,
   },
   
 ];
