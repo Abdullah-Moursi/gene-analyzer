@@ -15,6 +15,10 @@
           <a>Login_page</a>
         </router-link>
 
+              <router-link to="/DataManager" tag="li">
+          <a>Data_manager</a>
+        </router-link>
+
       </ul>
     </div>
   </div>
